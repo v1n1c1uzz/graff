@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link para o CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif; /* Usando a fonte Roboto */
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #121212, #1a1a1a); /* Gradiente escuro */
+            color: #e0e0e0;
+        }
+        header {
+            background: rgba(35, 35, 35, 0.9); /* Cabeçalho semi-transparente */
+            color: #ffffff;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        section {
+            padding: 20px;
+            margin: 10px;
+            background: rgba(44, 44, 44, 0.8); /* Seções com fundo um pouco mais claro */
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s;
+        }
+        section:hover {
+            transform: translateY(-5px); /* Levanta a seção ao passar o mouse */
+        }
+        .grid-projetos {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .projeto {
+            border: 1px solid rgba(68, 68, 68, 0.5);
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            background: #333; /* Fundo dos projetos */
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .projeto:hover {
+            transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+            box-shadow: 0 10px 20px rgba(0, 123, 255, 0.5); /* Sombra ao passar o mouse */
+        }
+        .projeto img {
+            width: 100%;
+            border-bottom: 2px solid #007bff; /* Borda em azul vibrante */
+        }
+        .projeto h3 {
+            margin: 10px 0 5px;
+            color: #00bfff; /* Cor dos títulos dos projetos */
+        }
+        .projeto p {
+            padding: 0 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(35, 35, 35, 0.9);
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Vin1ciuz - Web Developer</h1>
+</header>
+
+<section id="sobre">
+    <h2>Sobre Mim</h2>
+    <p>Dou uma brincada com os site ai,apreveia a viagem.</p>
+</section>
+
+<section id="projetos">
+    <h2>Meus Projetos</h2>
+    <div class="grid-projetos">
+        <div class="projeto">
+            <img src="imagem1.jpg" alt="Projeto 1">
+            <h3>Projeto 1</h3>
+            <p>Descrição do Projeto 1. Um site incrível que faz XYZ.</p>
+            <a href="link-do-projeto1.com">Ver Projeto</a>
+        </div>
+        <div class="projeto">
+            <img src="imagem2.jpg" alt="Projeto 2">
+            <h3>Projeto 2</h3>
+            <p>

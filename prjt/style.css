@@ -1,0 +1,126 @@
+/* Reset de Margin e Padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Usando a fonte Roboto */
+    background: linear-gradient(135deg, #121212, #1a1a1a); /* Gradiente escuro */
+    color: #ffffff; /* Texto claro */
+    line-height: 1.6;
+}
+
+/* Estilo do Cabeçalho */
+header {
+    background: rgba(35, 35, 35, 0.9); /* Cabeçalho semi-transparente */
+    color: #e0e0e0;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px); /* Efeito de desfoque no fundo */
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+/* Estilo das Seções */
+section {
+    padding: 20px;
+    margin: 10px;
+    background: rgba(44, 44, 44, 0.8); /* Fundo semi-transparente */
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilo do Grid de Projetos */
+.grid-projetos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Estilo dos Projetos */
+.projeto {
+    border: 1px solid rgba(68, 68, 68, 0.5); /* Borda sutil */
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    background: #333; /* Fundo dos projetos */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.projeto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 123, 255, 0.5); /* Sombra ao passar o mouse */
+}
+
+.projeto img {
+    width: 100%;
+    border-bottom: 2px solid #007bff; /* Borda em azul */
+}
+
+.projeto h3 {
+    margin: 10px 0 5px;
+    color: #00bfff; /* Cor dos títulos dos projetos */
+    font-size: 1.5em;
+}
+
+/* Estilo do Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input,
+form textarea {
+    margin: 5px 0;
+    padding: 15px;
+    border: 1px solid rgba(68, 68, 68, 0.5); /* Borda sutil */
+    border-radius: 4px;
+    background: #2c2c2c; /* Fundo dos campos de formulário */
+    color: #fff; /* Texto claro */
+    transition: border-color 0.3s;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #00bfff; /* Cor de foco em azul vibrante */
+    outline: none;
+}
+
+form button {
+    padding: 15px;
+    background-color: #007bff; /* Fundo do botão em azul */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+form button:hover {
+    background-color: #0056b3; /* Azul mais escuro ao passar o mouse */
+    transform: translateY(-2px);
+}
+
+/* Estilo do Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(35, 35, 35, 0.9); /* Rodapé semi-transparente */
+    color: #e0e0e0; /* Texto claro */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+    box-shadow: 0 -2px 20px rgba(0, 0, 0, 
